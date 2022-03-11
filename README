@@ -1,0 +1,14 @@
+Geliştirilen kabuk, Linux'te her gün çalıştırdığınız kabuğa benzer olmakla beraber çok daha basittir. 
+Aynı anda birden fazla komutu çalıştırabilmektedir.
+Kabuk iki şekilde çalışabilmelidir: interaktif (etkileşimli) ve batch (toplu). 
+İnteraktif modda, ekranda bir prompt görüntülenir, prompt seçtiğiniz herhangi bir kelime olabilir.   
+Kabuk kullanıcısı prompt yanına en fazla 512 karakterden oluşan bir komut yazabilir ve kabuk bunu okuyabilir. 
+Batch (toplu) modda ise, kabuk komut satırında ismi yazılan dosyanın içindeki komutları okur ve icra eder. 
+Batch modda, dosyadan okunan her satır (komut) çalıştırmadan önce ekrana yazdırılır. 
+Bu özellik kabuk programındaki hataları ayıklamada ve programlarınızı test ederken bize yardımcı olur. 
+İnteraktif veya toplu modda çalışırken kabuğunuz bir satırda “quit” komutunu gördüğünde çıkar.  
+Bunun dışında batch dosyasının sonuna ulaştığında veya kullanıcı “Ctrl-D” tuşlarına basarsa yeni komut almayı durdurur. 
+Kabuk, daha önce başlatılan ve çalışan tüm komutlar sona erdikten sonra çıkar.
+İnteraktif modda komut girişinde veya batch dosyasında, her satır “;” ile ayrılmış birden çok komut içerebilir ve “;” ile ayrılmış 
+komutların her biri eşzamanlı (paralel) olarak çalıştırır. 
+Kabuk, tüm bu komutların yürütülmesi tamamlanana kadar bir sonraki promptu yazdırmaz veya daha fazla girdi almaz. 
